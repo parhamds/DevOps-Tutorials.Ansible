@@ -1,0 +1,2 @@
+when : if this statement is true, do the task
+failed_when : fail this task, if the consition is met

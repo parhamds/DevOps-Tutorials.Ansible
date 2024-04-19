@@ -1,0 +1,10 @@
+block: we can put some tasks in a block and apply some configurations to that block,
+for example add ignore_errors: yes in block level instead on puting it inside every task
+
+rescue block: tasks inside rescue, will be run only if the tasks of the block failes. used to clear the task failure
+
+always block: tasks inside always, always will be run
+
+to have always and rescue, we have to define block
+
+we can have multiple block,always and rescue.

@@ -1,0 +1,11 @@
+// run only tasks with certain tag
+ansible-playbook <playbook_name.yaml> --tags <tag's name>
+
+// run only tasks which have one of these tasks 
+ansible-playbook <playbook_name.yaml> --tags <first tag's name>,<second tag's name>,...
+
+// run all tasks except the tasks with certain tag
+ansible-playbook <playbook_name.yaml> --skip-tags <first tag's name>
+
+// show list of all tags defined in playbook
+ansible-playbook <playbook_name.yaml> --list-tags

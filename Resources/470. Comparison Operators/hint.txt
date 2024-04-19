@@ -1,0 +1,6 @@
+comparison operators
+== != <= >= < >
+
+always returns true or false
+
+can be used for any type (int, string, ...)

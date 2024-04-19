@@ -1,0 +1,5 @@
+// filter : built in functions of ansible, called by "|"
+{{a|title}}" // capitalize first letter of each word
+
+// methods : python methods or custom filters, called by "."
+{{a.lower()}}"

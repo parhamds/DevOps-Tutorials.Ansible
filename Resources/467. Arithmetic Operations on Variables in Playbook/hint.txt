@@ -1,0 +1,2 @@
+hosts: localhost 
+means dont use clients to run task (run on ansible server)

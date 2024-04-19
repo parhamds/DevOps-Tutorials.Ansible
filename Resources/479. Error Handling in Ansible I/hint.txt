@@ -1,0 +1,6 @@
+ignore_errors: yes
+normally if a task1 failes, the whole playbook stops
+but if we want to continue the rest of tasks in case of failure of task1, we put "ignore_errors: yes" in task1
+
+failed_when: home1_out.rc==2
+fail this task, if the condition is met

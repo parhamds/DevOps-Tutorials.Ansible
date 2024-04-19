@@ -1,0 +1,17 @@
+#!/home/ubuntu/ansible/myansible/bin/ansible-playbook
+- name: This is Overview of Ansible Debug Module
+  hosts: all
+  remote_user: ubuntu
+  become: 'yes'
+  become_user: root
+
+  tasks:
+    - name: Retrive Installed Shell Version
+      shell: "bash --version"
+      register: bash_ver
+
+    - set_fact:
+        bash_version: "{{bash_ver.stdout_lines[0].split()[3].split('(')[0]}}"
+    
+    - debug:
+        var: bash_version 

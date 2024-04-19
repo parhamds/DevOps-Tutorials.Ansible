@@ -1,0 +1,15 @@
+// string 
+    xyz: Hello this is XYZ
+
+// list
+    packages: ['wget', 'unzip', 'curl', 'vim']
+
+// list
+    cities:
+    - New York
+    - London
+    - Tokyo
+    - Dubai
+
+// map
+    web_server: {'Linux': 'httpd', 'Unix': 'apache2'}

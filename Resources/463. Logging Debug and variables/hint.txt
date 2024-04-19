@@ -1,0 +1,4 @@
+if we set verbocity: 2 for a debug, it will be run only if we execute :
+./playbook.yml -vv
+or more v (like -vvv)
+it will be skipped by -v or less v

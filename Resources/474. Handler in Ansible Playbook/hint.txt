@@ -1,0 +1,26 @@
+//tesk1
+yum:
+  name: httpd
+  state: present
+// if httpd package is installed on client, it does nothing,
+// otw, it installs httpd (and put ture in changed field)
+
+//task2
+service:
+  name: httpd
+  state: started
+// it starts the httpd service
+
+// we want to run task 2, only if task1 is changed (if it is already installed, don't start it)
+// way1 :
+put output of task1 in a var using register
+in task2 put : when: <output_var>.changed == True
+// in this way, task2 or is run, or is skipped
+
+way2 :
+put task2 in handlers
+in task1 add
+notify :
+  - <name of task2>
+in this way task2 is called (by notify) only if task1.changed == True (if httpd was not inside it installed http)
+in this way task2 only is called or does not called (not skipped)

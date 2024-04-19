@@ -1,0 +1,8 @@
+// output of template
+
+Hi, This is Custom Index File. 
+Executing on Machine IP : [172.31.1.103'] 
+This is OS Family: RedHat 
+This Machine FQDN is : ip-172-31-1-103.us-east-2.compute.internal 
+This is Distro: Amazon and BIOS: 4.11.amazon 
+Hard Coded Variable: 123abc

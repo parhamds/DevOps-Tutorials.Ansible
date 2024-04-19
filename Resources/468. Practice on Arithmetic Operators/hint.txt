@@ -1,0 +1,8 @@
+  vars_prompt: // ask for values of this variables on run time
+    - name : x // name of variable 
+      prompt: Please enter Value of x // print this while asking the value of variable
+      private: no // see the value on cmd while user is typing that
+
+
+
+{{x|int + y|int}} // input values on vars_prompt considered as string => to use math operation, we need to convert them to int (type conversion)
